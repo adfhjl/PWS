@@ -1,1 +1,25 @@
 body {margin:0;}
+
+        p.level {
+            width: 100%;
+            text-align: center;
+            background-color: gray;
+            padding: 5px;
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        li.item {
+            display: inline-block;
+            border: 1px black double;
+            background-color: lightgrey;
+            padding: auto;
+            padding-left: 1%;
+            padding-right: 1%;
+            margin-left: 0px;
+        }
+
+        img.itemImage {
+            height: 150px;
+            width: 150px;
+        }
