@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Page Title</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+        p.level {
+            width: 100%;
+            text-align: center;
+            background-color: gray;
+            padding: 5px;
+            margin-top: 0;
+            font-size: 20px;
+        }
+
+        li.item {
+            display: inline-block;
+            border: 1px black double;
+            background-color: lightgrey;
+            padding: auto;
+            padding-left: 1%;
+            padding-right: 1%;
+            margin-left: 0px;
+        }
+
+        img.itemImage {
+            height: 150px;
+            width: 150px;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $(".ui-sortable").sortable({
+                revert: true,
+                connectWith: ".ui-sortable"
+            });
+            $("ul, li").disableSelection();
+        });
+    </script>
+</head>
+
+<body style="margin:0">
+    <div class="CPage">
+        <p class="level">Level 1</p>
+        <ul class="itemList Level-1 ui-sortable">
+            <li class="item"><img src="level-1.png" alt="Item Number 1" class="itemImage"></li>
+            <li class="item"><img src="level-2.png" alt="Item Number 2" class="itemImage"></li>
+        </ul>
+        <p class="level">Level 2</p>
+        <ul class="itemList Level-2 ui-sortable">
+            <li class="item"><img src="level-1-2.png" alt="Item Number 1" class="itemImage"></li>
+            <li class="item"><img src="level-2-2.png" alt="Item Number 2" class="itemImage"></li>
+        </ul>
+    </div>
+</body>
