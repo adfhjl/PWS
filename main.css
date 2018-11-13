@@ -12,6 +12,11 @@ p.level {
     font-size: 20px;
 }
 
+ul.itemList {
+    height: auto;
+    min-height: 50px;
+}
+
 li.item:not(.placeholder) {
     display: inline-block;
     border: 1px black double;
