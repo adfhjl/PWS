@@ -1,0 +1,57 @@
+body {
+    margin:0;
+}
+
+p.level {
+    width: 100%;
+    text-align: center;
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    margin-top: 0;
+    font-size: 20px;
+}
+
+li.item:not(.placeholder) {
+    display: inline-block;
+    border: 1px black double;
+    background-color: lightgrey;
+    padding: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 0px;
+}
+
+li.item.placeholder {
+    list-style: none;
+    height: 30px;
+    width: 0;
+}
+
+img.itemImage {
+    height: 150px;
+    width: 150px;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:"home klas zoek lijst"
+}
+
+#home {
+  
+}
+
+#klas {
+  
+}
+
+#zoek {
+  
+}
+
+#lijst {
+  
+}
