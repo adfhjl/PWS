@@ -2,6 +2,27 @@ body {
     margin:0;
 }
 
+/* .CNavbar {
+    top: 0;
+}
+
+.CoderclassImage {
+    max-height: 50px;
+    width: auto;
+    height: auto;
+}
+
+ul.ulNavbar {
+    list-style-type: none;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+li.navbarItem {
+    display: inline-block
+} */
+
 p.level {
     width: 100%;
     text-align: center;
