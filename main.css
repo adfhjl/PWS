@@ -64,22 +64,26 @@ img.itemImage {
     grid-template-columns: 1fr 6fr 1fr;
     grid-template-rows: 1fr;
     grid-template-areas:"home zoek print"
-                        "lln_balk badges badges"
-                        "lln_balk badges badges"
+                        "lln_balk CPage CPage"
+                        "lln_balk CPage CPage"
 }
 
 #home {
-  
-}
-
-#klas {
-  
+    
 }
 
 #zoek {
-  
+    
 }
 
-#lijst {
-  
+#print {
+    
+}
+
+#lln_balk {
+    
+}
+
+#CPage {
+    
 }
