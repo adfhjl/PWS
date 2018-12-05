@@ -87,15 +87,17 @@ img.itemImage {
 
 #print {
     background-color: #F44336;
-    padding-left: 10px;
     color: white;
     text-align: center;
 }
 
 #lln_balk {
-    background-color: lightblue;
-    border-right: dashed;
-    border-color: blue;
+    background-color: #ff4f42;
+    border-right: solid;
+    border-top: solid;
+    border-color: #d8473c;
+    color: white;
+    padding-left: 2%;
 }
 
 #CPage {
