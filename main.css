@@ -61,7 +61,7 @@ img.itemImage {
 
 #container {
     display: grid;
-    grid-template-columns: 1fr 6fr 1fr;
+    grid-template-columns: auto auto auto;
     grid-template-rows: 1fr;
     grid-template-areas:"home zoek print"
                         "lln_balk CPage CPage"
@@ -69,21 +69,31 @@ img.itemImage {
 }
 
 #home {
-    
+    background-color: #F44336;
+    padding-left: 10px;
+    border-right: dashed;
+    border-color: #f22615;
+    color: white;
 }
 
 #zoek {
-    
+    background-color: #F44336;
+    padding-left: 10px;
+    border-right: dashed;
+    border-color: #f22615;
+    color: white;
 }
 
 #print {
-    
+    background-color: #F44336;
+    padding-left: 10px;
+    color: white;
 }
 
 #lln_balk {
-    
+
 }
 
 #CPage {
-    
+
 }
