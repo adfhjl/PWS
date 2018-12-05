@@ -24,7 +24,7 @@ li.navbarItem {
 } */
 
 p.level {
-    width: 100%;
+    width: inherit;
     text-align: center;
     background-color: gray;
     color: white;
@@ -61,11 +61,11 @@ img.itemImage {
 
 #container {
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-rows: 1fr;
+    grid-template-columns: 0fr 1fr 1fr;
+    grid-template-rows: auto auto auto;
     grid-template-areas:"home zoek print"
-                        "lln_balk CPage CPage"
-                        "lln_balk CPage CPage"
+                        "lln_balk CPage"
+                        "lln_balk CPage"
 }
 
 #home {
@@ -74,26 +74,31 @@ img.itemImage {
     border-right: dashed;
     border-color: #f22615;
     color: white;
+    padding-top: 1%;
 }
 
 #zoek {
     background-color: #F44336;
-    padding-left: 10px;
     border-right: dashed;
     border-color: #f22615;
     color: white;
+    text-align: center;
 }
 
 #print {
     background-color: #F44336;
     padding-left: 10px;
     color: white;
+    text-align: center;
 }
 
 #lln_balk {
-
+    background-color: lightblue;
+    border-right: dashed;
+    border-color: blue;
 }
 
 #CPage {
-
+    background-color: lightgray;
+    width: 200%;
 }
