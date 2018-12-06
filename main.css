@@ -31,6 +31,8 @@ p.level {
     padding: 5px;
     margin-top: 0;
     font-size: 20px;
+    border-radius: 10px;
+    border: solid darkgray;
 }
 
 ul.itemList {
@@ -59,20 +61,42 @@ img.itemImage {
     width: 150px;
 }
 
+button.print-button {
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: #F44336;
+  border: solid;
+  border-color: #F44336;
+}
+
+button.print-button:hover {
+  background-color: #cc1c0e;
+  color: lightgray;
+}
+
+button.home-button {
+  height: 100%;
+  width: 100%;
+  color: white;
+  background-color: #F44336;
+  border: solid;
+  border-color: #F44336;
+}
+
 #container {
     display: grid;
     grid-template-columns: 0fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 1fr 10fr;
     grid-template-areas:"home zoek print"
-                        "lln_balk CPage"
                         "lln_balk CPage"
 }
 
 #home {
     background-color: #F44336;
     padding-left: 10px;
-    border-right: dashed;
-    border-color: #f22615;
+    border-right: dashed #f22615;
+    border-bottom: solid #f22615;
     color: white;
     padding-top: 1%;
 }
@@ -83,18 +107,19 @@ img.itemImage {
     border-color: #f22615;
     color: white;
     text-align: center;
+    border-bottom: solid #f22615;
 }
 
 #print {
     background-color: #F44336;
     color: white;
     text-align: center;
+    border-bottom: solid #f22615;
 }
 
 #lln_balk {
     background-color: #ff4f42;
     border-right: solid;
-    border-top: solid;
     border-color: #d8473c;
     color: white;
     padding-left: 2%;
@@ -103,4 +128,21 @@ img.itemImage {
 #CPage {
     background-color: lightgray;
     width: 200%;
+}
+
+#workinprogress {
+  background-image: url(https://www.scansys.eu/scansysfld/uploads/2017/06/Work_In_Progress.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: lightgray;
+  width: 200%;
+}
+
+#level1 {
+  min-height: 210px;
+}
+
+#level2 {
+  min-height: 210px;
 }
