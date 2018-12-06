@@ -1,27 +1,20 @@
 body {
-    margin:0;
-}
-
-/* .CNavbar {
-    top: 0;
-}
-
-.CoderclassImage {
-    max-height: 50px;
-    width: auto;
-    height: auto;
-}
-
-ul.ulNavbar {
-    list-style-type: none;
     margin: 0;
-    display: inline-block;
-    width: 100%;
 }
 
-li.navbarItem {
-    display: inline-block
-} */
+.CPage {
+  height: 100%;
+}
+
+.options {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+  max-height: 80px;
+  max-width: 80px;
+  height: auto;
+  width: auto;
+}
 
 p.level {
     width: inherit;
@@ -40,7 +33,7 @@ ul.itemList {
     min-height: 50px;
 }
 
-li.item:not(.placeholder) {
+li.item {
     display: inline-block;
     border: 1px black double;
     background-color: lightgrey;
@@ -48,12 +41,6 @@ li.item:not(.placeholder) {
     padding-left: 1%;
     padding-right: 1%;
     margin-left: 0px;
-}
-
-li.item.placeholder {
-    list-style: none;
-    height: 30px;
-    width: 0;
 }
 
 img.itemImage {
@@ -128,6 +115,7 @@ button.home-button {
 #CPage {
     background-color: lightgray;
     width: 133.3334%;
+}
 
 #workinprogress {
   background-image: url(https://www.scansys.eu/scansysfld/uploads/2017/06/Work_In_Progress.png);
@@ -135,7 +123,7 @@ button.home-button {
   background-repeat: no-repeat;
   background-position: center;
   background-color: lightgray;
-  width: 200%;
+  width: 133.3334%;
 }
 
 #level1 {
