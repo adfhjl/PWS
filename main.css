@@ -2,19 +2,26 @@ body {
     margin:0;
 }
 
-.CPage {
-  height:100%;
+/* .CNavbar {
+    top: 0;
 }
 
-.options {
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  max-height: 80px;
-  max-width: 80px;
-  height: auto;
-  width: auto;
+.CoderclassImage {
+    max-height: 50px;
+    width: auto;
+    height: auto;
 }
+
+ul.ulNavbar {
+    list-style-type: none;
+    margin: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+li.navbarItem {
+    display: inline-block
+} */
 
 p.level {
     width: inherit;
@@ -33,7 +40,7 @@ ul.itemList {
     min-height: 50px;
 }
 
-li.item {
+li.item:not(.placeholder) {
     display: inline-block;
     border: 1px black double;
     background-color: lightgrey;
@@ -41,6 +48,12 @@ li.item {
     padding-left: 1%;
     padding-right: 1%;
     margin-left: 0px;
+}
+
+li.item.placeholder {
+    list-style: none;
+    height: 30px;
+    width: 0;
 }
 
 img.itemImage {
@@ -73,7 +86,7 @@ button.home-button {
 
 #container {
     display: grid;
-    grid-template-columns: 0fr 1fr 1fr;
+    grid-template-columns: 0fr 3fr 1fr;
     grid-template-rows: 1fr 10fr;
     grid-template-areas:"home zoek print"
                         "lln_balk CPage"
@@ -114,8 +127,7 @@ button.home-button {
 
 #CPage {
     background-color: lightgray;
-    width: 200%;
-}
+    width: 133.3334%;
 
 #workinprogress {
   background-image: url(https://www.scansys.eu/scansysfld/uploads/2017/06/Work_In_Progress.png);
@@ -124,4 +136,12 @@ button.home-button {
   background-position: center;
   background-color: lightgray;
   width: 200%;
+}
+
+#level1 {
+  min-height: 210px;
+}
+
+#level2 {
+  min-height: 210px;
 }
