@@ -4,10 +4,16 @@ body {
 
 .dropbtn {
   background-color: darkgray;
-  color: white;
-  padding: 16px;
-  border: none;
+  border-left: solid;
+  border-top: solid;
+  border-top-left-radius: 10px;
+  max-height: 10%;
+  max-width: 5%;
+  height: 100px;
   width: 100px;
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
 }
 
 .dropdown {
@@ -29,17 +35,8 @@ body {
 }
 
 .options {
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  max-height: 10%;
-  max-width: 10%;
-  height: auto;
-  width: auto;
-  background-color: darkgray;
-  border-left: solid;
-  border-top: solid;
-  border-top-left-radius: 10px;
+  height: 100%;
+  width: 100%;
 }
 
 p.level {
