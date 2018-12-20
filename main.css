@@ -2,6 +2,28 @@ body {
     margin: 0;
 }
 
+.dropbtn {
+  background-color: darkgray;
+  color: white;
+  padding: 16px;
+  border: none;
+  width: 100px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 100%;
+  top: 0%;
+  background-color: darkgray;
+  width: auto;
+}
+
 .CPage {
   height: 100%;
 }
@@ -10,10 +32,14 @@ body {
   position: fixed;
   bottom: 0px;
   right: 0px;
-  max-height: 80px;
-  max-width: 80px;
+  max-height: 10%;
+  max-width: 10%;
   height: auto;
   width: auto;
+  background-color: darkgray;
+  border-left: solid;
+  border-top: solid;
+  border-top-left-radius: 10px;
 }
 
 p.level {
@@ -73,11 +99,7 @@ button.home-button {
 
 #container {
     display: grid;
-<<<<<<< HEAD
-    grid-template-columns: 0fr 1fr 1fr;
-=======
     grid-template-columns: 0fr 3fr 1fr;
->>>>>>> 49b591966e9644cf1d6661a47a58aa883ddfadc3
     grid-template-rows: 1fr 10fr;
     grid-template-areas:"home zoek print"
                         "lln_balk CPage"
@@ -128,23 +150,6 @@ button.home-button {
   background-position: center;
   background-color: lightgray;
   width: 133.3334%;
-}
-
-#level1 {
-  min-height: 210px;
-}
-
-#level2 {
-  min-height: 210px;
-}
-
-#workinprogress {
-  background-image: url(https://www.scansys.eu/scansysfld/uploads/2017/06/Work_In_Progress.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-color: lightgray;
-  width: 200%;
 }
 
 #level1 {
